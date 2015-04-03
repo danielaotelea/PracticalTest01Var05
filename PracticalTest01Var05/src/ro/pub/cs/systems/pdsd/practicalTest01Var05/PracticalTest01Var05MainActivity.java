@@ -29,7 +29,6 @@ private ButtonClickListener buttonClickListener = new ButtonClickListener();
 		{
 			Button b = (Button)findViewById(ButtonIds[i]);
 			b.setOnClickListener(buttonClickListener);
-			
 		}
 	}
 
@@ -66,16 +65,16 @@ private ButtonClickListener buttonClickListener = new ButtonClickListener();
 		{
 			if(savedInstanceState.getString("go_2_sec") != null)
 			{
-				Toast.makeText(this, "S-a salvat " +savedInstanceState.getString("go_2_sec"), Toast.LENGTH_LONG).show();
+				contor = Integer.parseInt(savedInstanceState.getString("go_2_sec"));
+				
 			} 
-		} else
-		{
-			Toast.makeText(this, "NU s-a salvat", Toast.LENGTH_LONG).show();
 		}
 	}
 	
 	public void onActivityResult(int requestCode, int resultCode, Intent intent) {
-	    contor++;
+		if(resultCode != 0)
+			contor++;
+		Toast.makeText(this, "The activity returned with result "+resultCode, Toast.LENGTH_LONG).show();
 	    EditText ed = (EditText)findViewById(R.id.editText1);
 	    ed.setText(null);
 	  }
