@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="ro.pub.cs.systems.pdsd.practicalTest01Var05.PracticalTest01Var05SecondaryActivity" >
+
+      <EditText
+        android:id="@+id/edit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:ems="10"
+        android:gravity="center_vertical|center"
+        android:inputType="number" >
+      </EditText>
+      
+        <EditText
+        android:id="@+id/edit2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:ems="10"
+        android:gravity="center_vertical|center"
+        android:inputType="text" >
+      </EditText>
+      
+        
+        <Button
+        android:id="@+id/aux1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Register"
+       />
+       
+        <Button
+        android:id="@+id/aux2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Cancel"
+       />
+
+</LinearLayout>
